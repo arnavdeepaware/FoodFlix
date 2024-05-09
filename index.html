@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>FoodFlix - Beat The Hunger</title>
+    <link rel="icon" href="img/foodflix logo.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Navigation bar -->
+  <div class="navbar" >
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#impact">Impact</a></li>
+      <li><button id="reduce-motion-button">Reduce Motion</button></li>
+      <li ><button id="theme-button">Toggle Dark Mode</button></li>
+    </ul>
+  </div>
+  
+
+    <!-- Header -->
+  <div class="header-container">
+      <div class="header-item">
+          <h1 id="home">FoodFlix - Beat The Hunger</h1>
+          <h3>A one stop website to tackle hunger and food waste</h3>
+      </div>
+      <div class="header-item">
+          <img id="header-img" src="img/foodflix logo.png" >
+          <div>
+              <button class="header-button" type="button">Donate</button>
+              <button class="header-button" type="button">Volunteer</button>
+              <button class="header-button" type="button">Contact Us</button>
+          </div>
+      </div>
+  </div>
+  <div class="petition revealable" id="petition">
+    <!-- About -->
+    <h2 id="about">Our Mission</h2>
+    <p >Our mission at FoodFlix is to combat hunger and food waste by providing a platform that educates, connects, and empowers individuals and businesses to donate food and support those in need.</p>
+  </div>
+
+    <!-- Why it needs to be addressed -->
+  <div class="petition revealable" id="petition">
+    <h2>Why this needs to be addressed!</h2>
+    <img src="img/food-waste-per-capita.png" width="40%" height="30%" alt="Per Capita Food Wastage of Countries in 2019">
+    <p>Explore per capita food wastage across diverse nations through our informative bar graph visualization.</p>
+
+    <img src="img/shutterstock_173810078.jpg" width="40%" height="30%" alt="Garbage truck disposing garbage on streets.">
+  </div>
+
+  <div class="petition revealable" id="petition">
+    <div class="petition" id="petition">
+      <h2>Support Sustainable Food Practices 🌱</h2>
+      <div class="petition-container">
+          <div class="petition-para">
+              <p>Join us in advocating for sustainable food practices by signing our petition! By supporting local farmers, reducing food waste, and promoting eco-friendly packaging, we can create a healthier and more sustainable future for our planet.</p>
+          </div>
+          <div class="signatures">
+              <p>🖊️ Emma from San Francisco supports this.</p>
+              <p>🖊️ James from Portland supports this.</p>
+              <p>🖊️ Maria from Seattle supports this.</p>
+            <p id="counter">🖊️ 3 people have signed this petition and support this cause.</p>
+          </div>
+      </div>
+      
+      <!-- Sign Petition Form -->
+      <form id="sign-petition" title="sign-petition">
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="hometown">Hometown:</label>
+          <input type="text" id="hometown" name="hometown" required>
+        </div>
+        <button type="submit" id = "sign-now-button">Sign Up Now</button>
+      </form>
+      </div>
+  </div>
+  
+    <p>The world needs to see how the other half is living.</p>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/EwS2Xc2IT_0?si=XMpf9UeNkQKIKLZf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen; id="impact"></iframe>
+
+  <div class="petition revealable" id="petition">
+    <!-- Recent News -->
+    <h2>Recent News</h2>
+    <a class="important" href="https://chainstoreage.com/rite-aid-enters-partnership-reduce-food-waste">
+        <article>
+            <h3>Rite Aid enters partnership to reduce food waste</h3>
+        </article>
+    </a>
+
+    <a class="important" href="https://www.thecooldown.com/green-home/homemade-breadcrumbs-saving-money-food-waste/">
+        <article>
+            <h3>Budgeting expert shares simple tip to keep grocery bills down: 'Food waste is money waste'</h3>
+            <p>The goal is to save money on groceries</p>
+        </article>
+    </a>
+
+
+  <div class="container">
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+  </div>
+  </div>
+
+  <div class="footer">
+      <a href="#">Footer Sample Link 1</a>
+      <a href="#">Footer Sample Link 2</a>
+  </div>
+
+  <!-- Modal -->
+  <div id="thanks-modal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <div id="modal-text-container">
+          <p id="thanks-modal-content">Thank you for supporting our cause!</p> <!-- This is the element that will be updated with the dynamic content -->
+          <!-- Button for stretch feature -->
+          <button id="close-modal-button">Close Modal</button>
+  
+        </div>
+        <img src="thanks.png" width="40%" height="60%" alt="Celebration image"> <!-- Image for celebration -->
+      </div>
+  </div>
+
+
+
+  <script src="index.js"></script>
+</body>
+
+</html>

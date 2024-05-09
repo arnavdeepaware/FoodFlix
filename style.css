@@ -1,0 +1,372 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-color: #f5f5f5;
+  font-family: Arial, sans-serif;
+  color: #333; 
+  margin: 0; 
+  padding: 0; 
+}
+
+/* Text styles */
+h1 {
+  color: #333;
+  background-color: #f9f9f9;
+  padding: 10px;
+  font-size: 28px;
+  text-align: center;
+}
+
+h2 {
+  color: #444;
+  font-size: 24px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+h3 {
+  color: #e01013;
+  font-size: 20px;
+}
+
+p {
+  color: #666;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+:link h3{
+  color: #0077cc;
+  text-decoration: none;
+}
+
+a:visited h3{
+  color: #6b16bb;
+  text-decoration: none;
+}
+
+a:hover h3{
+  color: #009688;
+  text-decoration: underline;
+}
+
+a:active h3{
+  color: #ff6347;
+  text-decoration: underline;
+}
+
+button {
+  background-color: #009688;
+  border: none;
+  color: white;
+  font-size: 16px;
+  text-align: center;
+  padding: 15px 32px;
+  cursor: pointer;
+  display: block;
+  margin: 20px auto;
+}
+
+/* Header styles */
+.header-container {
+  text-align: center;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: row; 
+  justify-content: center; 
+  align-items: center; 
+  padding: 20px 0; 
+}
+
+.header-item:nth-of-type(1) {
+  width: 50%;
+}
+
+.header-item:nth-of-type(2) {
+  width: 50%;
+}
+
+#header-left {
+  width: 50%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#header-right {
+  width: 50%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#header-img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+}
+
+.header-button {
+  background-color: #009688;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+/* Footer styles */
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #3a4a5d; 
+  color: #fff; 
+  text-align: center;
+  padding: 10px 0; 
+}
+
+
+.footer a {
+  color: #fff; 
+  text-decoration: none;
+  margin: 0 10px; 
+}
+
+
+/* Navbar styles */
+.navbar {
+  list-style-type: none; 
+  overflow: hidden;
+  position: fixed; 
+  top: 0;
+  width: 100%; 
+  margin-bottom: 15 px; 
+  background-color: #3a4a5d;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); 
+}
+
+.navbar li {
+  float: left;
+  margin: 0 10px; 
+}
+
+.navbar li a {
+  display: block; 
+  text-decoration: none; 
+  color: #fff; 
+  text-align: center; 
+  padding: 8px 10px; 
+  transition: background-color 0.3s ease; 
+  position: relative; 
+}
+
+.navbar li a::before {
+  content: "\2022"; 
+  position: absolute; 
+  left: -20px; 
+}
+
+.navbar li a:hover {
+  background-color: #555; 
+}
+
+/* Week 5 */
+
+
+/* Add style to button */
+#theme-button, #reduce-motion-button {
+  background-color: #3a4a5d; /* Match the navbar background color */
+  color: #fff; /* Match the navbar text color */
+  border: none; /* Remove border */
+  padding: 8px 15px; /* Adjust padding */
+  text-align: center; /* Center text */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition on hover */
+  cursor: pointer; /* Add pointer cursor */
+  font-weight: bold; /* Make text bold */
+}
+
+#theme-button:hover {
+  background-color: #264e6e; /* Darken button background color on hover */
+  transform: scale(1.05); /* Scale button on hover for a slight animation */
+}
+
+
+/* Customize Dark Mode Theme */
+.dark-mode {
+  /* Background color */
+  background-color: #264e6e;
+  /* Text color */
+  color: #F1FADA;
+  /* Border color */
+  border-color: #444;
+}
+
+.dark-mode h1 {
+  /* Heading 1 color */
+  color: #2D9596;
+}
+
+.dark-mode h2 {
+  /* Heading 2 color */
+  color: #9AD0C2;
+}
+
+.dark-mode h3, .dark-mode p{
+  color: #f9fada;
+}
+
+.dark-mode button {
+  /* Button background color */
+  background-color: #2D9596;
+  /* Button text color */
+  color: whitesmoke;
+}
+
+.dark-mode .header-container {
+  text-align: center;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: row; 
+  justify-content: center; 
+  align-items: center; 
+  padding: 20px 0; 
+}
+
+.dark-mode .footer {
+  /* Footer background color */
+  background-color: #333;
+}
+
+.petition-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 100%;
+    padding-bottom: 50px;
+}
+
+.petition-para {
+    width: 55%;
+    padding-right: 10px;
+}
+
+.signatures {
+    width: 45%;
+    padding-right: 10px;
+}
+
+/* Apply styles to form fields */
+#sign-petition {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 5px;
+  
+}
+
+/* Add this animation to your CSS */
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  50% { transform: translateX(5px); }
+  75% { transform: translateX(-3px); }
+  100% { transform: translateX(3px); }
+}
+
+.error {
+  border-style: solid;
+  border-width: 2px;
+  border-color: red;
+  background: pink;
+  animation: shake 0.5s ease-in-out;
+}
+
+
+.revealable {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all 2s ease;
+}
+
+/* CSS rule for the active class */
+.revealable.active {
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+/* Adjust navbar z-index to ensure it appears above other elements */
+.navbar {
+  position: fixed; /* or absolute depending on your layout */
+  z-index: 999; /* adjust as needed */
+}
+
+.modal {
+  display: none; /* hides the modal from view by default*/
+  position: fixed; /* keeps the modal in one place */
+  z-index: 2; /* positions the modal on top of all other elements on the screen */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  background-color: rgba(0,0,0,0.4); /* 40% opacity black - other elements can still be seen */
+  flex-direction: column; /* these flexbox rules center the content on the screen */
+  align-items: center;
+  justify-content: center;
+}
+
+/* box that contains all the content and images */
+.modal-content {
+  background-color: lightsteelblue; /* update the colors and font sizes as you like */
+  color: black;
+  text-align: center;
+  font-size: 3rem;
+  display: flex; /* adds flexbox to center all items */
+  justify-content: center;
+  align-items: center;
+}
+
+#thanks-modal-content {
+  width: 20rem; /* sets a default width for the text container */
+}
+
+#modal-text-container {
+  display: flex; /* adds flexbox to center the text and buttons (stretch feature) */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#close-modal-button {
+    background-color: #ff6347;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#close-modal-button:hover {
+    background-color: #d32f2f; /* Darken the background color on hover */
+}
